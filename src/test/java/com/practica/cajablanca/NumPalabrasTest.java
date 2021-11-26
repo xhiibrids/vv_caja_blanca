@@ -18,5 +18,10 @@ public class NumPalabrasTest {
     void camino1(){
         Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(0,1,"patata"));
     }
+    @Test
+    void camino2(){
+        Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(3,Integer.MAX_VALUE,"patata"));
+
+    }
 
 }
