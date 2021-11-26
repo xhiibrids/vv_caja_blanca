@@ -11,17 +11,47 @@ public class NumPalabrasTest {
     @BeforeEach
     void init() {
        editor = new Editor();
-       editor.leerFichero("src/main/resources/emtpyfile.txt");
+       editor.leerFichero("src/main/resources/prueba.txt");
     }
 
     @Test
     void camino1(){
-        Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(0,1,"patata"));
+        Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(0,1,"test"));
     }
     @Test
     void camino2(){
-        Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(3,Integer.MAX_VALUE,"patata"));
+        Assertions.assertThrows(IllegalArgumentException.class,() -> editor.numPalabras(3,Integer.MAX_VALUE,"test"));
 
     }
+    @Test
+    void camino3(){
+        editor =  new Editor();
+       Assertions.assertEquals(0,editor.numPalabras(2,-1,"test"));
+
+    }
+
+    @Test
+    void camino4(){
+        Assertions.assertEquals(0,editor.numPalabras(2,1,"test"));
+
+    }
+    @Test
+    @Disabled
+    @DisplayName("Camino 5 inviable. No se puede dar esta condición sin modificar el código del Editor")
+    void camino5(){
+
+    }
+    @Test
+    void camino6(){
+        Assertions.assertEquals(1,editor.numPalabras(1,2,"lore"));
+
+    }
+    @Test
+    void camino7(){
+        Assertions.assertEquals(0,editor.numPalabras(1,2,"palabranoenfichero"));
+
+    }
+
+
 
 }
