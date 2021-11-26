@@ -11,7 +11,7 @@ public class NumPalabrasTest {
     @BeforeEach
     void init() {
        editor = new Editor();
-       editor.leerFichero("src/main/java/com/practica/cajablanca/empty.txt");
+       editor.leerFichero("src/main/resources/emtpyfile.txt");
     }
 
     @Test

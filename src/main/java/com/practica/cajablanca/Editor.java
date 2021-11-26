@@ -200,7 +200,7 @@ public class Editor {
 		Editor editor = new Editor();
 		System.out.println(editor.editIsEmpty());
 
-		editor.leerFichero("src/main/java/com/practica/cajablanca/empty.txt");
+		editor.leerFichero("src/main/resources/emtpyfile.txt");
 		System.out.println(editor.editIsEmpty());
 		System.out.println(editor.mayorLongitud());
 		System.out.println(editor.numPalabras());
