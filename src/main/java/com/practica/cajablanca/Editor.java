@@ -196,15 +196,5 @@ public class Editor {
 		}
 	}
 
-	public static void main(String[] args) throws EmptyCollectionException {
-		Editor editor = new Editor();
-		System.out.println(editor.editIsEmpty());
-
-		editor.leerFichero("src/main/resources/emtpyfile.txt");
-		System.out.println(editor.editIsEmpty());
-		System.out.println(editor.mayorLongitud());
-		System.out.println(editor.numPalabras());
-
-
-	}
+	public static void main(String[] args) throws EmptyCollectionException { }
 }
