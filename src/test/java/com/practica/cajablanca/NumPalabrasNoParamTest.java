@@ -13,7 +13,7 @@ public class NumPalabrasNoParamTest {
     @BeforeEach
     void init() {
         editor = new Editor();
-        editor.leerFichero("src/main/resources/prueba.txt");
+        editor.leerFichero("src/main/resources/unaPalabra.txt");
     }
     @Test
     void camino1(){
@@ -38,6 +38,6 @@ public class NumPalabrasNoParamTest {
     }
     @Test
     void camino5() throws EmptyCollectionException {
-        Assertions.assertEquals(4, editor.numPalabras());
+        Assertions.assertEquals(1, editor.numPalabras());
     }
 }
