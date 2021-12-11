@@ -13,7 +13,7 @@ public class NumPalabrasNoParamTest {
     @BeforeEach
     void init() {
         editor = new Editor();
-        editor.leerFichero("src/main/resources/unaPalabra.txt");
+        editor.leerFichero("src/test/resources/unaPalabra.txt");
     }
     @Test
     void camino1(){

@@ -12,7 +12,7 @@ public class NumPalabrasTest {
     @BeforeEach
     void init() {
         editor = new Editor();
-        editor.leerFichero("src/main/resources/prueba.txt");
+        editor.leerFichero("src/test/resources/prueba.txt");
     }
 
     @Test

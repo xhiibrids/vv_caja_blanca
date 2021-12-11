@@ -49,7 +49,7 @@ public class MayorLongitudTest {
 
     @Test
     void camino4() throws EmptyCollectionException {
-        editor.leerFichero("src/main/resources/unaPalabra.txt");
+        editor.leerFichero("src/test/resources/unaPalabra.txt");
         Assertions.assertEquals("verificacion", editor.mayorLongitud());
     }
 
@@ -60,7 +60,7 @@ public class MayorLongitudTest {
          * se realizan dos vueltas del bucle "for" interno para "saltar" la condición de "mayor == null"
          * segunda palabra mas larga que la primera
          */
-        editor.leerFichero("src/main/resources/dosPalabrasSegMasLarga.txt");
+        editor.leerFichero("src/test/resources/dosPalabrasSegMasLarga.txt");
         Assertions.assertEquals("verificacion", editor.mayorLongitud());
     }
 
@@ -71,7 +71,7 @@ public class MayorLongitudTest {
          * se realizan dos vueltas del bucle "for" interno para "saltar" la condición de "mayor == null"
          * segunda palabra mas corta que la primera
          */
-        editor.leerFichero("src/main/resources/dosPalabrasSegMasCorta.txt");
+        editor.leerFichero("src/test/resources/dosPalabrasSegMasCorta.txt");
         Assertions.assertEquals("verificacion", editor.mayorLongitud());
     }
 
