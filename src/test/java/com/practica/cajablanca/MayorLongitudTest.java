@@ -58,9 +58,9 @@ public class MayorLongitudTest {
         /**
          * fichero con una sola linea y dos palabras
          * se realizan dos vueltas del bucle "for" interno para "saltar" la condición de "mayor == null"
-         * segunda palabra mas corta que la primera
+         * segunda palabra mas larga que la primera
          */
-        editor.leerFichero("src/main/resources/dosPalabrasSegMasCorta.txt");
+        editor.leerFichero("src/main/resources/dosPalabrasSegMasLarga.txt");
         Assertions.assertEquals("verificacion", editor.mayorLongitud());
     }
 
@@ -69,9 +69,9 @@ public class MayorLongitudTest {
         /**
          * fichero con una sola linea y dos palabras
          * se realizan dos vueltas del bucle "for" interno para "saltar" la condición de "mayor == null"
-         * segunda palabra mas larga que la primera
+         * segunda palabra mas corta que la primera
          */
-        editor.leerFichero("src/main/resources/dosPalabrasSegMasLarga.txt");
+        editor.leerFichero("src/main/resources/dosPalabrasSegMasCorta.txt");
         Assertions.assertEquals("verificacion", editor.mayorLongitud());
     }
 
